@@ -83,17 +83,17 @@ function createModal() {
   storyModeTab.classList.add('nav-link', 'active');
   storyModeTab.href = '#storyMode';
   storyModeTab.setAttribute('aria-selected', 'true');
-  storyModeTab.textContent = 'Story Mode';
+  storyModeTab.textContent = 'Story';
 
   const podcastModeTab = document.createElement('a');
   podcastModeTab.classList.add('nav-link');
   podcastModeTab.href = '#podcastMode';
-  podcastModeTab.textContent = 'Podcast Mode';
+  podcastModeTab.textContent = 'Podcast';
 
   const readAloudModeTab = document.createElement('a');
   readAloudModeTab.classList.add('nav-link');
   readAloudModeTab.href = '#readAloudMode';
-  readAloudModeTab.textContent = 'Read Aloud Mode';
+  readAloudModeTab.textContent = 'Read Out';
 
   nav.appendChild(storyModeTab);
   nav.appendChild(podcastModeTab);
@@ -150,14 +150,14 @@ function createModal() {
   // Create the modal trigger button
   const modalTriggerButton = document.createElement('button');
   modalTriggerButton.type = 'button';
-  modalTriggerButton.classList.add('btn', 'btn-primary');
+  modalTriggerButton.classList.add('btn', 'btn-primary', 'btn-circle');
   modalTriggerButton.setAttribute('data-bs-toggle', 'modal');
   modalTriggerButton.setAttribute('data-bs-target', '#staticBackdrop');
-  modalTriggerButton.textContent = 'Launch static backdrop modal';
+  modalTriggerButton.textContent = 'Open';
   
   // Create a style element and set the CSS rule
   const style = document.createElement('style');
-  style.textContent = `.fixed-button { position: fixed; bottom: 100px; right: 20px; }`;
+  style.textContent = `.fixed-button { position: fixed; bottom: 500px; right: 20px; } .btn-circle { width: 100px; height: 100px; padding: 13px 18px; border-radius: 60px; font-size: 15px; text-align: center;}`;
   
   // Add the style element to the head
   document.head.appendChild(style);
