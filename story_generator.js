@@ -222,6 +222,7 @@ console.log('started story_generator');
 // Append the amp-story to the document
  // document.body.appendChild(toggleButton);
 function createModal() {
+  console.log('starting createModal');
   const modalContainer = document.createElement('div');
   modalContainer.classList.add('modal', 'fade');
   modalContainer.id = 'staticBackdrop';
@@ -329,6 +330,7 @@ function createModal() {
 
   // Add the modal to the document body
   document.body.appendChild(modalContainer);
+    console.log('finished createModal');
 }
 
 createModal();
