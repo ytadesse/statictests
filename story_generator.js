@@ -148,7 +148,28 @@ console.log('started story_generator');
   
   // Append the script element to the head (or body) of the document
   document.head.appendChild(script);
+
+  // Create a new script element
+  var link_css = document.createElement('link');
   
+  // Set the source of the script to the URL of the JavaScript file you want to load
+  link_css.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css';
+
+   // Set the source of the script to the URL of the JavaScript file you want to load
+  link_css.rel = 'stylesheet';
+  
+  // Add a custom attribute to the script element
+  link_css.setAttribute('integrity', 'sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH');
+  
+  // Add a custom attribute to the script element
+  link_css.setAttribute('crossorigin', 'anonymous');
+  
+  // Append the script element to the head (or body) of the document
+  document.head.appendChild(link_css);
+
+  // Create a new script element
+  script = document.createElement('script');
+
   // Set the type of the script (optional, as it defaults to JavaScript)
   script.type = 'text/javascript';
   
