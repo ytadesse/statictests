@@ -85,19 +85,19 @@ function createModal() {
   storyModeTab.setAttribute('aria-selected', 'true');
   storyModeTab.textContent = 'Story Mode';
 
-  const readAloudModeTab = document.createElement('a');
-  readAloudModeTab.classList.add('nav-link');
-  readAloudModeTab.href = '#readAloudMode';
-  readAloudModeTab.textContent = 'Read Aloud Mode';
-
   const podcastModeTab = document.createElement('a');
   podcastModeTab.classList.add('nav-link');
   podcastModeTab.href = '#podcastMode';
   podcastModeTab.textContent = 'Podcast Mode';
 
+  const readAloudModeTab = document.createElement('a');
+  readAloudModeTab.classList.add('nav-link');
+  readAloudModeTab.href = '#readAloudMode';
+  readAloudModeTab.textContent = 'Read Aloud Mode';
+
   nav.appendChild(storyModeTab);
   nav.appendChild(podcastModeTab);
-  nav.appendChild(audioModeTab);
+  nav.appendChild(readAloudModeTab);
 
   const tabContent = document.createElement('div');
   tabContent.classList.add('tab-content');
