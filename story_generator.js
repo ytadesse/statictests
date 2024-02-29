@@ -85,19 +85,19 @@ function createModal() {
   storyModeTab.setAttribute('aria-selected', 'true');
   storyModeTab.textContent = 'Story Mode';
 
-  const audioModeTab = document.createElement('a');
-  audioModeTab.classList.add('nav-link');
-  audioModeTab.href = '#audioMode';
-  audioModeTab.textContent = 'Audio Mode';
+  const readAloudModeTab = document.createElement('a');
+  readAloudModeTab.classList.add('nav-link');
+  readAloudModeTab.href = '#readAloudMode';
+  readAloudModeTab.textContent = 'Read Aloud Mode';
 
   const podcastModeTab = document.createElement('a');
   podcastModeTab.classList.add('nav-link');
   podcastModeTab.href = '#podcastMode';
-  textContent = 'Podcast Mode';
+  podcastModeTab.textContent = 'Podcast Mode';
 
   nav.appendChild(storyModeTab);
-  nav.appendChild(audioModeTab);
   nav.appendChild(podcastModeTab);
+  nav.appendChild(audioModeTab);
 
   const tabContent = document.createElement('div');
   tabContent.classList.add('tab-content');
@@ -107,16 +107,16 @@ function createModal() {
   storyModeContent.id = 'storyMode';
 
   // Add your content for Story Mode here (without the carousel)
-
-  const audioModeContent = document.createElement('div');
-  audioModeContent.classList.add('tab-pane');
-  audioModeContent.id = 'audioMode';
-  // Add your content for Audio Mode here
-
+  
   const podcastModeContent = document.createElement('div');
   podcastModeContent.classList.add('tab-pane');
   podcastModeContent.id = 'podcastMode';
   // Add your content for Podcast Mode here
+
+  const readAloudModeContent = document.createElement('div');
+  readAloudModeContent.classList.add('tab-pane');
+  readAloudModeContent.id = 'readAloudMode';
+  // Add your content for Audio Mode here
 
   tabContent.appendChild(storyModeContent);
   tabContent.appendChild(audioModeContent);
