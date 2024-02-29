@@ -38,40 +38,7 @@ console.log('started story_generator');
   
   // Append the script element to the head (or body) of the document
   document.head.appendChild(script);
-  
-  // Create and style the toggle button
-  var toggleButton = document.createElement('button');
-  toggleButton.textContent = 'Open Story';
-  toggleButton.style.position = 'fixed';
-  toggleButton.style.bottom = '400px';
-  toggleButton.style.right = '20px';
-  toggleButton.style.width = '80px';
-  toggleButton.style.height = '80px';
-  toggleButton.style.borderRadius = '50%';
-  toggleButton.style.fontSize = '24px';
-  toggleButton.style.textAlign = 'center';
-  toggleButton.style.backgroundColor = '#007bff';
-  toggleButton.style.color = 'white';
-  toggleButton.style.border = 'none';
-  toggleButton.style.cursor = 'pointer';
-  toggleButton.style.zIndex = '10000000000001';
-  
-  // Add event listener to toggle AMP story visibility
-  toggleButton.addEventListener('click', function() {
-    var ampStoryWrapper = document.querySelector('#amp-story-wrapper');
-    if (ampStoryWrapper.style.display == '' || ampStoryWrapper.style.display === ''  || ampStoryWrapper.style.display == 'none !important' || ampStoryWrapper.style.display === 'none !important'  || ampStory.style.display == 'none' || ampStoryWrapper.style.display === 'none' ) {
-      console.log('hehe');
-      ampStoryWrapper.setAttribute('style', 'display:block !important');
-      this.textContent = 'Close Story'
-    } else {
-    console.log('haha');
-      ampStoryWrapper.setAttribute('style', 'display:none !important');
-      this.textContent = 'Open Story'
-    }
-  });
 
-// Append the amp-story to the document
- // document.body.appendChild(toggleButton);
 function createModal() {
   console.log('starting createModal');
   const modalContainer = document.createElement('div');
