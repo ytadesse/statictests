@@ -330,6 +330,17 @@ function createModal() {
 
   // Add the modal to the document body
   document.body.appendChild(modalContainer);
+
+  const modalTriggerButton = document.createElement('button');
+modalTriggerButton.type = 'button';
+modalTriggerButton.classList.add('btn', 'btn-primary');
+modalTriggerButton.setAttribute('data-bs-toggle', 'modal');
+modalTriggerButton.setAttribute('data-bs-target', '#staticBackdrop');
+modalTriggerButton.textContent = 'Launch static backdrop modal';
+
+// Add the button to the desired location in your HTML
+document.body.appendChild(modalTriggerButton);  // Example: To append it to the end of the body
+
     console.log('finished createModal');
 }
 
