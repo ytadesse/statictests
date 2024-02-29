@@ -332,15 +332,25 @@ function createModal() {
   // Add the modal to the document body
   document.body.appendChild(modalContainer);
 
+  // Create the modal trigger button
   const modalTriggerButton = document.createElement('button');
-modalTriggerButton.type = 'button';
-modalTriggerButton.classList.add('btn', 'btn-primary');
-modalTriggerButton.setAttribute('data-bs-toggle', 'modal');
-modalTriggerButton.setAttribute('data-bs-target', '#staticBackdrop');
-modalTriggerButton.textContent = 'Launch static backdrop modal';
+  modalTriggerButton.type = 'button';
+  modalTriggerButton.classList.add('btn', 'btn-primary');
+  modalTriggerButton.setAttribute('data-bs-toggle', 'modal');
+  modalTriggerButton.setAttribute('data-bs-target', '#staticBackdrop');
+  modalTriggerButton.textContent = 'Launch static backdrop modal';
+  
+  // Create a style element and set the CSS rule
+  const style = document.createElement('style');
+  style.textContent = `.fixed-button { position: fixed; bottom: 100px; right: 20px; }`;
+  
+  // Add the style element to the head
+  document.head.appendChild(style);
+  
+  // Add the button to the body
+  modalTriggerButton.classList.add('fixed-button'); // Now add the class after creating the style
+  document.body.appendChild(modalTriggerButton);
 
-// Add the button to the desired location in your HTML
-document.body.appendChild(modalTriggerButton);  // Example: To append it to the end of the body
 
     console.log('finished createModal');
 }
