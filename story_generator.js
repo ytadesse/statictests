@@ -1,3 +1,5 @@
+function start_story_generator()
+{
   // Step 2: Dynamically create and add the CSS styles
   var style = document.createElement('style');
   style.setAttribute('amp-boilerplate', '');
@@ -196,4 +198,4 @@
       this.textContent = 'Open Story'
     }
   });
-});
+}
