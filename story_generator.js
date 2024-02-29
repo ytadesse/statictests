@@ -148,45 +148,6 @@ console.log('started story_generator');
   
   // Append the script element to the head (or body) of the document
   document.head.appendChild(script);
-
-  // Create a new script element
-  var link_css = document.createElement('link');
-  
-  // Set the source of the script to the URL of the JavaScript file you want to load
-  link_css.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css';
-
-   // Set the source of the script to the URL of the JavaScript file you want to load
-  link_css.rel = 'stylesheet';
-  
-  // Add a custom attribute to the script element
-  link_css.setAttribute('integrity', 'sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH');
-  
-  // Add a custom attribute to the script element
-  link_css.setAttribute('crossorigin', 'anonymous');
-  
-  // Append the script element to the head (or body) of the document
-  document.head.appendChild(link_css);
-
-  // Create a new script element
-  script = document.createElement('script');
-
-  // Set the type of the script (optional, as it defaults to JavaScript)
-  script.type = 'text/javascript';
-  
-  // Set the source of the script to the URL of the JavaScript file you want to load
-  script.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js';
-  
-  // Add the async attribute to the script element
-  script.async = true;
-  
-  // Add a custom attribute to the script element
-  script.setAttribute('integrity', 'sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy');
-  
-  // Add a custom attribute to the script element
-  script.setAttribute('crossorigin', 'anonymous');
-  
-  // Append the script element to the head (or body) of the document
-  document.head.appendChild(script);
   
   // Create and style the toggle button
   var toggleButton = document.createElement('button');
@@ -346,4 +307,44 @@ document.body.appendChild(modalTriggerButton);  // Example: To append it to the 
 }
 
 createModal();
+
+// Create a new script element
+  var link_css = document.createElement('link');
+  
+  // Set the source of the script to the URL of the JavaScript file you want to load
+  link_css.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css';
+
+   // Set the source of the script to the URL of the JavaScript file you want to load
+  link_css.rel = 'stylesheet';
+  
+  // Add a custom attribute to the script element
+  link_css.setAttribute('integrity', 'sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH');
+  
+  // Add a custom attribute to the script element
+  link_css.setAttribute('crossorigin', 'anonymous');
+  
+  // Append the script element to the head (or body) of the document
+  document.head.appendChild(link_css);
+
+  // Create a new script element
+  script = document.createElement('script');
+
+  // Set the type of the script (optional, as it defaults to JavaScript)
+  script.type = 'text/javascript';
+  
+  // Set the source of the script to the URL of the JavaScript file you want to load
+  script.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js';
+  
+  // Add the async attribute to the script element
+  script.async = true;
+  
+  // Add a custom attribute to the script element
+  script.setAttribute('integrity', 'sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy');
+  
+  // Add a custom attribute to the script element
+  script.setAttribute('crossorigin', 'anonymous');
+  
+  // Append the script element to the head (or body) of the document
+  document.head.appendChild(script);
+
 console.log('finished story_generator');
