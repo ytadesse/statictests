@@ -39,7 +39,7 @@ console.log('started story_generator');
 function createModal() {
   console.log('starting createModal');
   const modalContainer = document.createElement('div');
-  modalContainer.classList.add('modal';
+  modalContainer.classList.add('modal');
   modalContainer.id = 'staticBackdrop';
   modalContainer.setAttribute('data-bs-backdrop', 'static');
   modalContainer.setAttribute('data-bs-keyboard', 'false');
