@@ -166,6 +166,31 @@ function createModal() {
   modalTriggerButton.classList.add('fixed-button'); // Now add the class after creating the style
   document.body.appendChild(modalTriggerButton);
 
+  // Select the tab links
+  const tabLinks = document.querySelectorAll('.nav-link');
+  
+  // Loop through each tab link
+  tabLinks.forEach(link => {
+    // Add click event listener
+    link.addEventListener('click', function(event) {
+      // Prevent default link behavior
+      event.preventDefault();
+  
+      // Remove active class from all tab links and tab panes
+      tabLinks.forEach(l => l.classList.remove('active'));
+      document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active', 'show'));
+  
+      // Get the target tab content ID from the clicked link's href
+      const targetId = this.getAttribute('href');
+  
+      // Get the target tab content element
+      const targetPane = document.getElementById(targetId.slice(1)); // Remove the # prefix
+  
+      // Add active class to the clicked tab link and its corresponding tab content
+      this.classList.add('active');
+      targetPane.classList.add('active', 'show');
+    });
+  });
 
     console.log('finished createModal');
 }
