@@ -224,7 +224,7 @@ console.log('started story_generator');
 function createModal() {
   console.log('starting createModal');
   const modalContainer = document.createElement('div');
-  modalContainer.classList.add('modal', 'fade');
+  //modalContainer.classList.add('modal', 'fade');
   modalContainer.id = 'staticBackdrop';
   modalContainer.setAttribute('data-bs-backdrop', 'static');
   modalContainer.setAttribute('data-bs-keyboard', 'false');
@@ -234,6 +234,7 @@ function createModal() {
 
   const modalDialog = document.createElement('div');
   modalDialog.classList.add('modal-dialog');
+  modalDialog.classList.add('modal-fullscreen-sm-down');
 
   const modalContent = document.createElement('div');
   modalContent.classList.add('modal-content');
