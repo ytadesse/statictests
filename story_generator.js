@@ -1,5 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-  
   // Step 2: Dynamically create and add the CSS styles
   var style = document.createElement('style');
   style.setAttribute('amp-boilerplate', '');
@@ -199,6 +197,3 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
-
-// Append the toggle button to the document
-document.body.appendChild(toggleButton);
