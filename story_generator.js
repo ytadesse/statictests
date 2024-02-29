@@ -116,11 +116,11 @@ function createModal() {
   const readAloudModeContent = document.createElement('div');
   readAloudModeContent.classList.add('tab-pane');
   readAloudModeContent.id = 'readAloudMode';
-  // Add your content for Audio Mode here
+  // Add your content for Read Aloud Mode here
 
   tabContent.appendChild(storyModeContent);
-  tabContent.appendChild(audioModeContent);
   tabContent.appendChild(podcastModeContent);
+  tabContent.appendChild(readAloudModeContent);
 
   modalBody.appendChild(nav);
   modalBody.appendChild(tabContent);
