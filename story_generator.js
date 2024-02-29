@@ -218,4 +218,7 @@ console.log('started story_generator');
       this.textContent = 'Open Story'
     }
   });
+
+// Append the amp-story to the document
+  document.body.appendChild(toggleButton);
 console.log('finished story_generator');
