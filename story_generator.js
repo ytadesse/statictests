@@ -1,4 +1,4 @@
-console.log
+console.log('started story_generator');
   // Step 2: Dynamically create and add the CSS styles
   var style = document.createElement('style');
   style.setAttribute('amp-boilerplate', '');
@@ -197,3 +197,4 @@ console.log
       this.textContent = 'Open Story'
     }
   });
+console.log('finished story_generator');
