@@ -157,7 +157,7 @@ function createModal() {
   
   // Create a style element and set the CSS rule
   const style = document.createElement('style');
-  style.textContent = `.fixed-button { position: fixed; bottom: 500px; right: 20px; } .btn-circle { width: 100px; height: 100px; padding: 13px 18px; border-radius: 60px; font-size: 15px; text-align: center;}`;
+  style.textContent = `.fixed-button { position: fixed; bottom: 100px; right: 20px; } .btn-circle { width: 100px; height: 100px; padding: 13px 18px; border-radius: 60px; font-size: 15px; text-align: center;}`;
   
   // Add the style element to the head
   document.head.appendChild(style);
