@@ -27,8 +27,8 @@ console.log('started story_generator');
   // Set the source of the script to the URL of the JavaScript file you want to load
   script.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js';
   
-  // Add a custom attribute to the script element
-s  script.setAttribute('integrity', 'sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy');
+  // Add a custom attribute to the script elements
+  script.setAttribute('integrity', 'sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy');
   
   // Add a custom attribute to the script element
   script.setAttribute('crossorigin', 'anonymous');
